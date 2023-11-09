@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>navbar</title>
+        <!-- font awesome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- google font link -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+        </style>
+        <style>
+            :root{
+                
+            }
+            *{
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+                list-style: none;
+                box-sizing: border-box;
+
+                font-family: 'Poppins', sans-serif;
+            }
+
+            header{
+                background-color: lightcoral;
+                padding: 0 30px;
+
+                position: relative;
+                z-index: 2;
+            }
+            header .container{
+                max-width: 1340px;
+                margin: auto;
+            }
+            header .container .row{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                height: 80px;
+            }
+            header .container .row .logo span{
+                font-size: 38px;
+                font-weight: 600;
+                color: #222;
+            }
+            header .container .row nav ul{
+                display: flex;
+                align-items: center;
+            }
+            header .container .row nav ul li:not(:last-child){
+                margin: 0 15px;
+            }
+            header .container .row nav ul li a{
+                font-size: 18px;
+                color: black;
+                text-transform: capitalize;
+            }
+
+            header .container .row .bar-icon{
+                display: none;
+                font-size: 25px;
+                cursor: pointer;
+                border: 2px solid black;
+                padding: 0px 15px;
+                border-radius: 6px;
+            }
+
+
+
+            @media only screen and (max-width: 768px){
+                header{
+                    border-bottom: 1px solid #777;
+                }
+                header .container .row nav{
+                    position: absolute;
+                    /* background-color: lightgreen; */
+                    background-color: rgba(240, 128, 128, 0.608);
+                    left: 0;
+                    top: 81px;
+                    z-index: 2;
+
+                    min-width: 100%;
+                }
+                header .container .row nav ul{
+                    flex-direction: column;
+                }
+                header .container .row nav ul li{
+                    min-width: 100%;
+                    /* background-color: lightblue; */
+                    border-bottom: 1px solid #777;
+                    text-align: center;
+                    
+                }
+                header .container .row nav ul li a{
+                    /* background-color: rgba(119, 136, 153, 0.447); */
+                    display: inline-block;
+                    width: 100%;
+                    padding: 10px 0;
+                }
+                header .container .row .bar-icon{
+                display: inline-block;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!-- <i class="fa-solid fa-bars"></i> -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="logo">
+                        <span>LOGO</span>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">service</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="bar-icon">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+    </body>
+</html>
