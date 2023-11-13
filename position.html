@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position & overflow uses</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 350px;
+            background-color: rgba(0, 0, 0, 0.206);
+            text-align: justify;
+            border: 4px solid black;
+
+            overflow: auto;
+        }
+        .container-2{
+            width: 100%;
+            min-height: 100%;
+            max-height: auto;
+
+            position: relative;
+        }
+        .hide{
+            /* display: none; */
+        }
+        .box-1{
+            background-color: red;
+            padding-bottom: 40px;
+        }
+        .box-2{
+            background-color: hotpink;
+            
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-2">
+            <div class="box-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit sint ratione fugit accusamus corporis eaque? At, nobis amet quae a facere ipsa tempore autem officiis aperiam tempora magnam accusantium incidunt. <span class="hide">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae porro magni natus ullam consequuntur unde eum, sed deserunt quis nostrum obcaecati nihil, numquam quia in dolores iste magnam dolore. Porro quia voluptatem officia pariatur sequi explicabo odio vel molestiae numquam, odit eum quis earum corporis quas? Aut reprehenderit at natus perspiciatis animi laborum, officiis doloremque harum expedita? Officia obcaecati quas ea repellat sed odit atque saepe eius, illo, temporibus quod facilis perferendis ducimus facere enim deserunt dicta. Sapiente at consequatur molestiae? Error ipsum ipsa pariatur corrupti eius aliquid alias dolorem assumenda repellendus commodi dicta, minima quas hic sequi eaque veritatis!</span></div>
+            <div class="box-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, doloribus?</div>
+        </div>
+    </div>
+</body>
+</html>
