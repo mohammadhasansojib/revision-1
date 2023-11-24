@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>animated input box</title>
+        <style>
+            body{
+                background-color: black;
+                color: white;
+
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .input-box{
+                background-color: #99999986;
+                width: max-content;
+                padding: 5px 10px;
+                border-radius: 4px;
+
+                display: flex;
+                flex-direction: column;
+
+                position: relative;
+
+            }
+            .input-box span{
+                display: inline-block;
+                font-size: 13px;
+
+                position: absolute;
+                top: 7px;
+                left: 17px;
+            }
+            .input-box input{
+                background-color: transparent;
+                outline: none;
+                color: #fff;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 200;
+            }
+            .input-box span:has(input:active){
+                top: 0;
+                left: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="input-box">
+            <span>Email Address</span>
+            <input type="text">
+        </div>
+    </body>
+</html>
